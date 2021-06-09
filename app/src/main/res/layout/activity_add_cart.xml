@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AddCartActivity">
+
+    <ImageView
+        android:id="@+id/img_addCart"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/iphone12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_nameItem_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="NAME: IPHONE12"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@id/img_addCart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_quantityItem_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="QUANTITY: 23"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@id/img_addCart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nameItem_addCart" />
+
+    <TextView
+        android:id="@+id/txt_priceItem_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="PRICE: 100000"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@id/img_addCart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quantityItem_addCart" />
+
+    <TextView
+        android:id="@+id/txt_buyItem_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="BUY: "
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@id/img_addCart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_priceItem_addCart" />
+
+    <EditText
+        android:id="@+id/edt_quantityItem_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:hint="quantity"
+        android:inputType="number"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@id/txt_buyItem_addCart"
+        app:layout_constraintTop_toBottomOf="@+id/txt_priceItem_addCart" />
+
+    <Button
+        android:id="@+id/btn_cancel_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="40dp"
+        android:text="CANCEL"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_add_addCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="ADD"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
